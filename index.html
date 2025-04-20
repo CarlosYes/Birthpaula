@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+<html lang=pt-PT>
+<head>
+<title>Radio Estremadura</title>
+<meta name="description" content="Estremadura24" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv=X-UA-Compatible content="IE=Edge"/>
+<meta property="og:title" content="Estremadura24 Player" />
+<meta property="og:description" content="Estremadura24" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/wiHgZBM.png" sizes="48x48" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/wiHgZBM.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/wiHgZBM.png" sizes="144x144" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/wiHgZBM.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i.imgur.com/wiHgZBM.png" sizes="180x180"/>
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wish">
+        Parabéns Paula!!!
+    </div>
+    <div class="cake">
+        <div class="plate"></div>
+        <div class="layer"></div>
+        <div class="icing">
+            <div class="name">
+                <p>Feliz Aniversário <br/> <span id="Name">Paula</span></p>
+            </div>
+        </div>
+        <div class="candle1">
+            <div class="flame1"></div>
+        </div>
+        <div class="candle2">
+            <div class="flame2"></div>
+        </div>
+        <div class="candle3">
+            <div class="flame3"></div>
+        </div>
+        <div class="candle4">
+            <div class="flame4"></div>
+        </div>
+        <div class="candle5">
+            <div class="flame5"></div>
+        </div>
+    </div>
+    <div class ="text">Hoje A Nossa Locutora Paula Está De Parabéns!!!! Feliz Aniversário Paulinha!...
+    </div>
+<img class="animated fadeIn dorothystanding bt-menu-trigger-out" src="https://xatimg.com/image/1SqvB4xaF9eh.gif" width="300" height="302" alt="Dorothy"/></a> <img class="animated fadeIn totostanding" src="https://xatimg.com/image/YJoUgHKJv5R6.png" width="222" height="303" alt="Toto"/>
+
+    <script src="function.js" type="text/javascript"></script>
+</body>
+<script>
+
+    var message = "©arlos Copyright";
+
+    function clickIE4() {
+        if (event.button == 2) {
+            alert(message);
+            return false;
+        }
+    }
+
+    function clickNS4(e) {
+        if (document.layers || document.getElementById && !document.all) {
+            if (e.which == 2 || e.which == 3) {
+                alert(message);
+                return false;
+            }
+        }
+    }
+
+    if (document.layers) {
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = clickNS4;
+    } else if (document.all && !document.getElementById) {
+        document.onmousedown = clickIE4;
+    }
+
+    document.oncontextmenu = new Function("alert(message);return false")
+</script>
+<script>
+
+    function disableselect(e) {
+        return false
+    }
+    function reEnable() {
+        return true
+    }
+    document.onselectstart = new Function("return false")
+    if (window.sidebar) {
+        document.onmousedown = disableselect
+        document.onclick = reEnable
+    }
+</script>
+<script>
+        window.oncontextmenu = function () {
+            console.log("Right Click Disabled");
+            return false;
+        }
+    </script> 
+  
+</body>
+</html>
