@@ -219,14 +219,14 @@ body {
 .dorothystanding {
 	position: fixed;
 	bottom: 0;
-	left: 65%;
+	left: 75%;
 	bottom: 250px;
 	z-index: 300;
 }
 .totostanding {
 	position: fixed;
 	bottom: 0;
-	left: 23%;
+	left: 10%;
 	bottom: 250px;
 	z-index: 500;
 }
